@@ -1,32 +1,82 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+
+  <v-app>
+    <router-view></router-view>
+  </v-app>
+
 </template>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.v-badge--bordered .v-badge__badge::after{
+  border-width: 5px ;
 }
 </style>
+
+<!--<script>-->
+<!--//import { mdiAlarm } from '@mdi/js';-->
+<!--//import Header from ".Header.vue";-->
+<!--// import Header from '@/components/Header.vue'-->
+<!--import DigitalClock from 'vue-digital-clock'-->
+<!--import moment from 'moment'-->
+<!--export default {-->
+<!--  name: "App",-->
+
+<!--  components: {-->
+<!--    // Header,-->
+<!--    DigitalClock,-->
+<!--    //mdiAlarm-->
+
+<!--  },-->
+
+<!--  data: () => ({-->
+<!--    todayDate: moment().format(' ddd Do MMMM YYYY '),-->
+<!--    drawer: false,-->
+<!--    group: null,-->
+<!--    items: [-->
+<!--      {title: 'Dashboard', icon: 'mdi-view-dashboard'},-->
+<!--      {title: 'Photos', icon: 'mdi-image'},-->
+<!--      {title: 'About', icon: 'mdi-help-box'},-->
+<!--    ],-->
+<!--    right: null-->
+<!--  }),-->
+<!--  watch: {-->
+<!--    group() {-->
+<!--      this.drawer = false-->
+<!--    }-->
+<!--  }-->
+<!--};-->
+<!--</script>-->
+<!--<style scoped>-->
+<!--a {-->
+<!--  text-decoration: none;-->
+<!--}-->
+
+<!--#clock {-->
+<!--  font-family: 'Share Tech Mono', monospace;-->
+<!--  color: #ffffff;-->
+<!--  text-align: center;-->
+<!--  position: absolute;-->
+<!--  left: 50%;-->
+<!--  top: 50%;-->
+<!--  transform: translate(-50%, -50%);-->
+<!--  color: black;-->
+<!--  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);-->
+
+<!--.time {-->
+<!--  letter-spacing: 0.05em;-->
+<!--  font-size: 80px;-->
+<!--  padding: 5px 0;-->
+<!--}-->
+
+<!--.date {-->
+<!--  letter-spacing: 0.1em;-->
+<!--  font-size: 24px;-->
+<!--}-->
+
+<!--.text {-->
+<!--  letter-spacing: 0.1em;-->
+<!--  font-size: 12px;-->
+<!--  padding: 20px 0 0;-->
+<!--}-->
+
+<!--}-->
+<!--</style>-->
